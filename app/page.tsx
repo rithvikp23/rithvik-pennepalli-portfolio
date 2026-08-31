@@ -31,7 +31,7 @@ export default function Home() {
         <div className="eyebrow"><span className="status-dot" /> Creator · Editor · Brand partner</div>
         <h1>RITHVIK<br /><span>PENNEPALLI</span></h1>
         <div className="rithvik-hero-copy">
-          <p>I’m building a life worth watching—and turning it into content worth sharing.</p>
+          <p>editor based in Miami</p>
           <a href="#creator" className="circle-link" aria-label="Meet Rithvik"><ArrowDownRight size={28} /></a>
         </div>
         <div className="identity-tape"><span>MAIN CHARACTER ENERGY</span><span>CREATOR INSTINCT</span><span>EDITOR DISCIPLINE</span></div>
