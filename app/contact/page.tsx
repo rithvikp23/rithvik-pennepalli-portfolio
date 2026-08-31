@@ -6,7 +6,7 @@ export const metadata = { title: 'Start a project — RP', description: 'Creator
 export default function ContactPage() {
   return (
     <main className="contact-page">
-      <header className="site-header contact-header"><a href="/" className="name-mark" aria-label="Rithvik Pennepalli home">Rithvik Pennepalli</a><a href="/" className="back-link"><ArrowLeft size={15} /> Back to Rithvik</a></header>
+      <header className="site-header contact-header"><a href="#/" className="name-mark" aria-label="Rithvik Pennepalli home">Rithvik Pennepalli</a><a href="#/" className="back-link"><ArrowLeft size={15} /> Back to Rithvik</a></header>
       <section className="contact-layout">
         <div className="contact-intro">
           <span className="section-kicker">Start a project</span><h1>Let’s make<br />something <em>move.</em></h1>
