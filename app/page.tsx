@@ -1,9 +1,9 @@
 import { ArrowDownRight, ArrowUpRight, Clapperboard, Gauge, Scissors, Sparkles } from 'lucide-react';
 
 const platforms = [
-  { name: 'Instagram', handle: '@rithvikpennepalli', followers: '3,973', detail: 'followers · 146 posts', href: 'https://www.instagram.com/rithvikpennepalli/' },
-  { name: 'TikTok', handle: '@rithvikpennepalli', followers: '856', detail: 'followers · 15.2K likes', href: 'https://www.tiktok.com/@rithvikpennepalli' },
-  { name: 'YouTube', handle: '@rithvikpennepalli', followers: '492', detail: 'subscribers · 84 videos', href: 'https://www.youtube.com/@rithvikpennepalli' },
+  { name: 'Instagram', handle: '@rithvikpennepalli', followers: '3,973', detail: 'followers · 146 posts', href: 'https://www.instagram.com/rithvikpennepalli/reel/Dcj5tQGCkk-/' },
+  { name: 'TikTok', handle: '@rithvikpennepalli', followers: '856', detail: 'followers · 15.2K likes', href: 'https://www.tiktok.com/@rithvikpennepalli/video/7656885161929231629' },
+  { name: 'YouTube', handle: '@rithvikpennepalli', followers: '492', detail: 'subscribers · 84 videos', href: 'https://www.youtube.com/shorts/VStjvYIIuM4' },
 ];
 
 const ownWork = [
@@ -31,15 +31,14 @@ export default function Home() {
         <div className="eyebrow"><span className="status-dot" /> Creator · Editor · Brand partner</div>
         <h1>RITHVIK<br /><span>PENNEPALLI</span></h1>
         <div className="rithvik-hero-copy">
-          <p>editor based in Miami</p>
+          <p>Stories made with curiosity, intention, and a little bit of wonder.</p>
           <a href="#creator" className="circle-link" aria-label="Meet Rithvik"><ArrowDownRight size={28} /></a>
         </div>
-        <div className="identity-tape"><span>MAIN CHARACTER ENERGY</span><span>CREATOR INSTINCT</span><span>EDITOR DISCIPLINE</span></div>
       </section>
 
       <section className="creator-section" id="creator">
         <div className="creator-manifesto"><span className="section-kicker">This is Rithvik</span><h2>Creator first.<br />Always <em>curious.</em></h2></div>
-        <div className="creator-copy"><p>I’m an up-and-coming creator documenting the ideas, experiences, and choices shaping who I become. The camera isn’t the point—it’s the permission to notice more, try more, and bring people along.</p><p>My own feed is the playground. I test hooks, formats, rhythms, and stories on myself before I bring those instincts into client work.</p></div>
+        <div className="creator-copy"><p>I’ve been making videos since I was a kid—posting vlogs with family and friends throughout high school and college. I love every part of creating: sitting with a thought, finding the idea, bringing it to life with a camera, then shaping the feeling with my editing.</p><p>I tell simple stories in a way that makes you feel present: a grocery run, a morning run, a small moment of love or joy. My work is rooted in faith, guided by my inner child and inner divine, and made to help people feel closer to themselves. My feed is my playground. I’m just a kid who loves to create.</p></div>
         <div className="content-stage" aria-label="Rithvik's social content">
           {ownWork.map((video) => <a className={`content-placeholder ${video.tone}`} href={video.href} target="_blank" rel="noreferrer" key={video.href}><span>{video.platform}</span><strong>{video.title}</strong><small>{video.note} <ArrowUpRight size={13} /></small></a>)}
         </div>
@@ -47,7 +46,7 @@ export default function Home() {
 
       <section className="numbers" id="numbers">
         <div className="section-kicker">Rithvik’s live audience</div>
-        <div className="numbers-heading"><h2>Every view starts<br />with a <em>choice.</em></h2><p>Current public snapshots from Rithvik’s channels, synced August 31, 2026. True live aggregate views require official analytics APIs; the public profiles do not expose a complete all-time view total.</p></div>
+        <div className="numbers-heading"><h2>Make them<br /><em>stay.</em></h2><p>Live performance and audience across Rithvik’s channels—where attention becomes connection, and connection becomes community.</p></div>
         <div className="platform-grid">
           {platforms.map((platform) => <article className="platform-card" key={platform.name}><div><span>{platform.name}</span><small>{platform.handle}</small></div><strong>{platform.followers}</strong><p>{platform.detail}</p>{platform.href && <a className="platform-link" href={platform.href} target="_blank" rel="noreferrer" aria-label={`Open Rithvik on ${platform.name}`}><ArrowUpRight size={15} /></a>}</article>)}
           <article className="platform-card total-card"><Sparkles size={20} /><span>Known audience</span><strong>5,321+</strong><p>followers + subscribers across all three channels</p></article>
@@ -55,14 +54,14 @@ export default function Home() {
       </section>
 
       <section className="skills-section">
-        <div className="skills-heading"><span className="section-kicker">The editor brain</span><h2>I know where<br />the <em>cut belongs.</em></h2><p>Because I create my own content, I don’t just see footage. I see the hook, the turn, the payoff—and the frame where someone might swipe.</p></div>
+        <div className="skills-heading"><span className="section-kicker">The editor brain</span><h2>Earn their<br /><em>attention.</em></h2><p>I’m always looking for the better version. I study retention and hook performance, test different cuts, and refine the strategy until the story—and the product—has the best chance to land.</p></div>
         <div className="skills-list">{skills.map(({ icon: Icon, number, title, copy }) => <article key={number}><div><span>{number}</span><Icon size={22} /></div><h3>{title}</h3><p>{copy}</p></article>)}</div>
-        <a className="case-study-link" href="#/editing"><span>Editing case study</span><strong>Three months shaping content for Armaan Talreja</strong><ArrowUpRight /></a>
+        <a className="case-study-link" href="#/editing"><span>Editing services</span><strong>Short-form and long-form, built to hold attention.</strong><ArrowUpRight /></a>
       </section>
 
       <section className="about" id="about">
-        <span className="section-kicker">More than one lane</span><h2>Ambition, with<br /><em>range.</em></h2>
-        <div className="about-copy"><p>I’m Rithvik Pennepalli: an emerging creator, freelance video editor, and someone who’s happiest when an idea becomes a thing people can actually feel. I care about taste, momentum, and doing the work behind the scenes.</p><div className="credential"><span>Current brand partner</span><strong>Uber</strong></div></div>
+        <span className="section-kicker">The work I love</span><h2>Stories with<br /><em>staying power.</em></h2>
+        <div className="about-copy"><p>I’m Rithvik Pennepalli—a creator and freelance video editor open to both short-form and long-form work. I care about taste, momentum, honesty, and doing the thoughtful work behind the scenes that makes an audience lean in.</p><div className="credential"><span>Current brand partner</span><strong>Uber</strong></div></div>
       </section>
 
       <footer><p>For editing, UGC, creator campaigns, and brand partnerships.</p><a href="#/contact">Let’s make it move <ArrowUpRight size={24} /></a></footer>
