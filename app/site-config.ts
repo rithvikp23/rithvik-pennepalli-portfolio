@@ -3,7 +3,7 @@ export const siteConfig = {
   contactEmail: 'rithvikpennepalli@gmail.com',
   socials: {
     instagram: 'https://www.instagram.com/rithvikpennepalli/',
-    tiktok: '',
+    tiktok: 'https://www.tiktok.com/@rithvikpennepalli',
     youtube: 'https://www.youtube.com/@rithvikpennepalli',
   },
 };

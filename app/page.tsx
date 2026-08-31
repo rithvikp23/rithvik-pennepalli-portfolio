@@ -2,14 +2,14 @@ import { ArrowDownRight, ArrowUpRight, Clapperboard, Gauge, Scissors, Sparkles }
 
 const platforms = [
   { name: 'Instagram', handle: '@rithvikpennepalli', followers: '3,973', detail: 'followers · 146 posts', href: 'https://www.instagram.com/rithvikpennepalli/' },
-  { name: 'TikTok', handle: 'Sign-in pending', followers: '—', detail: 'live profile connection pending', href: '' },
+  { name: 'TikTok', handle: '@rithvikpennepalli', followers: '856', detail: 'followers · 15.2K likes', href: 'https://www.tiktok.com/@rithvikpennepalli' },
   { name: 'YouTube', handle: '@rithvikpennepalli', followers: '492', detail: 'subscribers · 84 videos', href: 'https://www.youtube.com/@rithvikpennepalli' },
 ];
 
 const ownWork = [
   { platform: 'Instagram', title: 'Latest reel', note: 'Watch on Instagram', href: 'https://www.instagram.com/rithvikpennepalli/reel/Dcj5tQGCkk-/', tone: 'lime' },
   { platform: 'YouTube', title: 'Now that I live w my girl', note: '4.5K views · watch Short', href: 'https://www.youtube.com/shorts/VStjvYIIuM4', tone: 'blue' },
-  { platform: 'Instagram', title: 'Creator diary', note: 'Watch on Instagram', href: 'https://www.instagram.com/rithvikpennepalli/reel/Dceh4xZKQMq/', tone: 'pink' },
+  { platform: 'TikTok', title: 'Long distance era', note: '14K views · watch TikTok', href: 'https://www.tiktok.com/@rithvikpennepalli/video/7656885161929231629', tone: 'pink' },
 ];
 
 const skills = [
@@ -47,10 +47,10 @@ export default function Home() {
 
       <section className="numbers" id="numbers">
         <div className="section-kicker">Rithvik’s live audience</div>
-        <div className="numbers-heading"><h2>Every view starts<br />with a <em>choice.</em></h2><p>Current public snapshots from Rithvik’s channels. True live aggregate views require official analytics access and will switch on after the remaining account connection.</p></div>
+        <div className="numbers-heading"><h2>Every view starts<br />with a <em>choice.</em></h2><p>Current public snapshots from Rithvik’s channels, synced August 31, 2026. True live aggregate views require official analytics APIs; the public profiles do not expose a complete all-time view total.</p></div>
         <div className="platform-grid">
           {platforms.map((platform) => <article className="platform-card" key={platform.name}><div><span>{platform.name}</span><small>{platform.handle}</small></div><strong>{platform.followers}</strong><p>{platform.detail}</p>{platform.href && <a className="platform-link" href={platform.href} target="_blank" rel="noreferrer" aria-label={`Open Rithvik on ${platform.name}`}><ArrowUpRight size={15} /></a>}</article>)}
-          <article className="platform-card total-card"><Sparkles size={20} /><span>Known audience</span><strong>4,465+</strong><p>Instagram followers + YouTube subscribers; TikTok pending</p></article>
+          <article className="platform-card total-card"><Sparkles size={20} /><span>Known audience</span><strong>5,321+</strong><p>followers + subscribers across all three channels</p></article>
         </div>
       </section>
 
